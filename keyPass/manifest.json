@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "Keypass",
+	"version": "0.0.1",
+	"description": "A basic example extension with only required keys",
+	"background": {
+		"service_worker": "service-worker.js",
+		"type": "module"
+	  },
+	"content_scripts" : [
+	{
+	"js" : [
+	"Cscript.js"
+	]
+	}
+	],
+	"permissions": ["scripting", "activeTab", "chrome.tabs", "cookies"],
+	"default_popup": "popup.html"
+}
