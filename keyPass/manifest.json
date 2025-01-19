@@ -11,7 +11,8 @@
 	{
 	"js" : [
 	"Cscript.js"
-	]
+	],
+	"matches": ["https://*/*","http://*/*"]
 	}
 	],
 	"permissions": ["scripting", "activeTab", "chrome.tabs", "cookies"],
