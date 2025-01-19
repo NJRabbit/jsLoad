@@ -6,5 +6,8 @@ const filter = {
     ],
   };
 
+  function call(data) {
+    alert("redirecting: " + data)
+  }
 
-//chrome.webRequest.onBeforeRequest.addListener(callback, filter, opt_extraInfoSpec)
+  chrome.webRequest.onBeforeRequest.addListener(call(data), filter, redirectUrl)
